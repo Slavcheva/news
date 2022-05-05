@@ -1,0 +1,6 @@
+.site-aside{
+    font-size: 12px;
+    grid-area: sidebar;
+    background-color: lightcyan;
+
+}

@@ -1,0 +1,6 @@
+.site-header{
+    /*display: flex;*/
+    /*border: 3px solid black;*/
+    padding-bottom: 3em;
+    grid-area: header;
+}

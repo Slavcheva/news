@@ -1,0 +1,12 @@
+.top-nav{
+    background-color: gray;
+    flex-grow: 1;
+}
+
+.top-nav h1{
+    margin-bottom: 0;
+    padding: 0.5em 0;
+    display: inline-block;
+    color: black;
+    align-items: center;
+}
