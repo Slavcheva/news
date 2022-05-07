@@ -1,10 +1,21 @@
-import "./Main.css"
+import React from "react";
 
-import NewsBoard from "../NewsBoard/NewsBoard";
+import "./Main.css"
+import service from "../../service";
+import NewsList from "../News/NewsList";
+
 const Main = () => {
+    const [publications, setPublications] = React.useState([]);
+
+    React.useEffect(() => {
+        service.getAll().then((publications) => {
+            setPublications(publications.articles);
+        });
+    }, []);
+
     return (
             <main className="site-main">
-                <NewsBoard/>
+                <NewsList publications={publications}/>
             </main>
     )
 }

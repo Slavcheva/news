@@ -1,6 +1,39 @@
-.site-aside{
-    font-size: 12px;
-    grid-area: sidebar;
-    background-color: lightcyan;
-
+.site-aside .publications-list .card .article {
+    display: flex;
+    flex-wrap: wrap;
 }
+
+.site-aside .publications-list .card .article .card-img {
+    flex: 0 0 40%;
+}
+
+.site-aside .publications-list .card .article .card-content{
+    flex: 0 0 50%;
+    max-width: 50%;
+    text-align: left;
+    font-size: 0.6rem;
+    line-height: 1;
+    padding-left: 1em;
+}
+
+.site-aside .full-info{
+    display: none;
+}
+
+.source{
+    color: #EC1D24;
+    font-size: 0.7em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+/*@media (min-width: 1024px) {*/
+/*    */
+/*}*/
+/*@media (min-width: 1600px) {*/
+
+/*}*/
+
+

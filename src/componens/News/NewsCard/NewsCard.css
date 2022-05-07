@@ -1,0 +1,44 @@
+.publications-list .card {
+    text-decoration: none;
+}
+
+.publications-list .card .article {
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid lightgray;
+    color: #000000FF;
+}
+.publications-list .card .article .card-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.publications-list .card .article .card-img:before {
+    display: block;
+    content: '';
+    padding-top: 56.25%;
+}
+
+.publications-list .card .article .card-img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+}
+
+.source {
+    color: #EC1D24;
+    font-size: 0.7em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+@media (min-width: 1024px) {
+    .publications-list .card .article {
+        border: none
+    }
+}

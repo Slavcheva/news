@@ -1,7 +1,8 @@
-import './Aside.css'
 import React from "react";
+
+import "./Aside.css";
 import service from "../../service";
-import News from "../News/News";
+import NewsList from "../News/NewsList";
 
 const Aside = () => {
     const [publications, setPublications] = React.useState([]);
@@ -14,7 +15,8 @@ const Aside = () => {
 
     return (
         <aside className="site-aside">
-            <News publications={publications}/>
+            <h2>Top Headlines</h2>
+            <NewsList publications={publications}/>
         </aside>
     )
 }
