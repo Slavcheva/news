@@ -13,7 +13,7 @@ const NewsList = ({
                         )}
                     </ul>
                 )
-                : <p className="no-publications">Loading...</p>
+                : <p>Loading...</p>
             }
         </div>
     )

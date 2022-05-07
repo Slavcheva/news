@@ -1,0 +1,42 @@
+.home-page .main-section {
+    margin-bottom: 2rem;
+    grid-area: main;
+}
+
+.home-page .site-aside {
+    grid-area: aside;
+}
+
+.home-page .category-view {
+    margin-bottom: 2rem;
+    grid-area: category;
+}
+
+@media (min-width: 1024px) {
+    .home-page {
+        display: grid;
+        grid-template-areas:
+        "main main main aside"
+        "category category  category  category";
+        grid-column-gap: 4em;
+        margin: 0 auto;
+    }
+
+    .main-section .publications-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2em;
+    }
+
+    .main-section .publications-list .card:first-child {
+        grid-column: span 3;
+    }
+}
+
+h3 {
+    padding-bottom: 0.5em;
+}
+
+.sources-section div {
+    padding-bottom: 2em;
+}

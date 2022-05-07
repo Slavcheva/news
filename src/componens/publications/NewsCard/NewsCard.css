@@ -28,6 +28,14 @@
     height: auto;
 }
 
+.publications-list .card .article .card-content p small{
+    color: #000000B5;
+    margin-top: 2em;
+}
+.publications-list .card .article .card-content p {
+    margin-top: 1em;
+}
+
 .source {
     color: #EC1D24;
     font-size: 0.7em;

@@ -11,7 +11,7 @@
     flex: 0 0 50%;
     max-width: 50%;
     text-align: left;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     line-height: 1;
     padding-left: 1em;
 }
@@ -20,20 +20,15 @@
     display: none;
 }
 
-.source{
-    color: #EC1D24;
-    font-size: 0.7em;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 5px;
-    text-align: left;
+.site-aside div{
+    padding-bottom: 2em;
 }
 
-/*@media (min-width: 1024px) {*/
-/*    */
-/*}*/
-/*@media (min-width: 1600px) {*/
+@media (max-width: 1024px) {
+    .site-aside .publications-list .card .article .card-content{
+        font-size: 1em;
+    }
+}
 
-/*}*/
 
 

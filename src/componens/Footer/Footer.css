@@ -1,5 +1,6 @@
 .site-footer{
     border-top: 1px solid #8394a9 ;
     margin-top: 3em;
-    /*grid-area: footer;*/
+    text-align: center;
+    padding: 1em 0;
 }

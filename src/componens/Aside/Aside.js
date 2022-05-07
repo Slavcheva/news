@@ -1,22 +1,34 @@
 import React from "react";
 
 import "./Aside.css";
-import service from "../../service";
-import NewsList from "../News/NewsList";
+import services from "../../services";
+import NewsList from "../publications/NewsList";
+import SourcesList from "../sources/SourcesList";
 
 const Aside = () => {
     const [publications, setPublications] = React.useState([]);
+    const [sources, setSources] = React.useState([]);
 
     React.useEffect(() => {
-        service.getTop().then((publications) => {
+        services.getTop().then((publications) => {
             setPublications(publications.articles);
+        });
+    }, []);
+
+
+    React.useEffect(() => {
+        services.getBySource().then((sources) => {
+            setSources(sources.sources);
         });
     }, []);
 
     return (
         <aside className="site-aside">
-            <h2>Top Headlines</h2>
-            <NewsList publications={publications}/>
+                <h3>Top Headlines</h3>
+                <NewsList publications={publications}/>
+
+                <h3>News Sources</h3>
+                <SourcesList sources={sources}/>
         </aside>
     )
 }
