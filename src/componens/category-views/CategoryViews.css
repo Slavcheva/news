@@ -1,27 +1,27 @@
 .category-view{
     grid-area: category;
 }
+
+.category .full-info p small {
+    display: none;
+}
+
 @media (min-width: 768px) {
 
-    .category .publications-list .card .article {
+    .category .publications-list .card {
         display: flex;
         flex-wrap: wrap;
     }
 
-    .category .publications-list .card .article .card-img {
+    .category .publications-list .card .card-img {
         flex: 0 0 40%;
     }
 
-    .category .publications-list .card .article .card-content {
+    .category .publications-list .card .card-content {
         flex: 0 0 59%;
         max-width: 59%;
         text-align: left;
-        /*font-size: 0.6rem;*/
         line-height: 1;
         padding-left: 1em;
     }
-}
-
-.category .full-info p small {
-    display: none;
 }

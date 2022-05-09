@@ -1,6 +1,6 @@
-.home-page .main-section {
-    margin-bottom: 2rem;
+.home-page .publications {
     grid-area: main;
+    margin-bottom: 2rem;
 }
 
 .home-page .site-aside {
@@ -8,8 +8,37 @@
 }
 
 .home-page .category-view {
-    margin-bottom: 2rem;
     grid-area: category;
+    margin-bottom: 2rem;
+}
+
+h3 {
+    padding-bottom: 0.5em;
+}
+
+.sources-section div {
+    padding-bottom: 2em;
+}
+
+@media (max-width: 768px) {
+
+    .home-page .category-view .category .full-info {
+        display: none;
+    }
+
+    .home-page .category-view .category .card-img {
+        display: none;
+    }
+
+    .home-page .category-view .category h3 {
+        margin-top: 3em;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .home-page .category-view .category .card-content {
+        padding-top: 1em;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -22,21 +51,19 @@
         margin: 0 auto;
     }
 
-    .main-section .publications-list {
+    .home-page .publications .publications-list  {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 2em;
     }
-
-    .main-section .publications-list .card:first-child {
+    .home-page .publications .publications-list .card {
+        grid-column: span 1;
+    }
+    .home-page .publications .publications-list .card:first-child {
         grid-column: span 3;
+    }
+    .home-page .publications-list .card .full-info {
+        font-size: 0.8em;
     }
 }
 
-h3 {
-    padding-bottom: 0.5em;
-}
-
-.sources-section div {
-    padding-bottom: 2em;
-}

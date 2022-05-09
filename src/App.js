@@ -10,13 +10,14 @@ import Business from "./componens/category-views/Business";
 import Health from "./componens/category-views/Health";
 import Sports from "./componens/category-views/Sports";
 
+
 function App() {
     return (
         <div className="site">
             <Header/>
             <main className="site-main">
                 <Routes>
-                    <Route exact path="/" element={<Home/>}/>
+                    <Route path="/" element={<Home/>}/>
                     <Route path="/business" element={<Business/>}/>
                     <Route path="/health" element={<Health/>}/>
                     <Route path="/sports" element={<Sports/>}/>
@@ -24,7 +25,6 @@ function App() {
                 </Routes>
             </main>
             <Footer/>
-
         </div>
     );
 }

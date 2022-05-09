@@ -1,24 +1,4 @@
 .site {
-    margin: 0 1rem;
-}
-
-@media (min-width: 1024px) {
-
-    .site {
-        margin: 0 5vh;
-    }
-}
-
-@media (min-width: 1200px) {
-
-    .site {
-        margin: 0 10em;
-    }
-}
-
-@media (min-width: 1600px) {
-
-    .site {
-        margin: 0 20em;
-    }
+    max-width: 60rem;
+    margin: auto;
 }

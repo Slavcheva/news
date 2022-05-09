@@ -7,7 +7,6 @@ const NewsCard = ({
                   }) => {
     return (
         <a className="card" target="_blank" rel="noreferrer noopener" href={publication.url} >
-            <article className="article">
                 <div className="card-img">
                     <img src={publication.urlToImage} alt=""/>
                 </div>
@@ -19,7 +18,6 @@ const NewsCard = ({
                         <p><small>{publication.publishedAt}</small></p>
                     </div>
                 </div>
-            </article>
         </a>
     );
 }

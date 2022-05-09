@@ -2,24 +2,24 @@
     text-decoration: none;
 }
 
-.publications-list .card .article {
+.publications-list .card {
     padding-bottom: 1em;
     margin-bottom: 1em;
     border-bottom: 1px solid lightgray;
     color: #000000FF;
 }
-.publications-list .card .article .card-img {
+.publications-list .card  .card-img {
     position: relative;
     overflow: hidden;
 }
 
-.publications-list .card .article .card-img:before {
+.publications-list .card .card-img:before {
     display: block;
     content: '';
     padding-top: 56.25%;
 }
 
-.publications-list .card .article .card-img img {
+.publications-list .card .card-img img {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -28,11 +28,11 @@
     height: auto;
 }
 
-.publications-list .card .article .card-content p small{
+.publications-list .card .card-content p small{
     color: #000000B5;
     margin-top: 2em;
 }
-.publications-list .card .article .card-content p {
+.publications-list .card .card-content p {
     margin-top: 1em;
 }
 
@@ -46,7 +46,7 @@
 }
 
 @media (min-width: 1024px) {
-    .publications-list .card .article {
+    .publications-list .card {
         border: none
     }
 }

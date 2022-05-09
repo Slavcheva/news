@@ -1,13 +1,13 @@
-.site-aside .publications-list .card .article {
+.site-aside .publications-list .card {
     display: flex;
     flex-wrap: wrap;
 }
 
-.site-aside .publications-list .card .article .card-img {
+.site-aside .publications-list .card .card-img {
     flex: 0 0 40%;
 }
 
-.site-aside .publications-list .card .article .card-content{
+.site-aside .publications-list .card .card-content{
     flex: 0 0 50%;
     max-width: 50%;
     text-align: left;
@@ -25,7 +25,7 @@
 }
 
 @media (max-width: 1024px) {
-    .site-aside .publications-list .card .article .card-content{
+    .site-aside .publications-list .card .card-content{
         font-size: 1em;
     }
 }

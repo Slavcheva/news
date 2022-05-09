@@ -12,7 +12,7 @@ const SourcesList = ({
                 ? (
                     <ul className="sources-list">
                         {sources.filter(source =>chooseSources.includes(source.id)).map(source =>
-                            <SourcesDetails source={source}/>
+                            <SourcesDetails key={source.id} source={source}/>
                         )}
                     </ul>
                 )

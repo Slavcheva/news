@@ -17,9 +17,9 @@ const Home = () => {
 
     return (
         <div className="home-page">
-            <section className="main-section">
+            <div className="publications">
                 <NewsList publications={publications}/>
-            </section>
+            </div>
             <Aside/>
             <CategoryViews/>
         </div>
