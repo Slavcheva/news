@@ -5,7 +5,7 @@ const sources = "bbc-news,nbc-news,associated-press,reuters,medical-news-today,n
 const services = {
 
     getAll: function () {
-        return fetch(`${baseUrl}everything?sources=${sources}&pageSize=19&sortBy=publishedAt&apiKey=${apiKey}`)
+        return fetch(`${baseUrl}everything?sources=${sources}&pageSize=25&sortBy=publishedAt&apiKey=${apiKey}`)
             .then(res => res.json());
     },
 

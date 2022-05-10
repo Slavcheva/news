@@ -8,7 +8,7 @@ const NewsCard = ({
     return (
         <a className="card" target="_blank" rel="noreferrer noopener" href={publication.url} >
                 <div className="card-img">
-                    <img src={publication.urlToImage} alt=""/>
+                    <img src={publication.urlToImage} alt="" loading="lazy"/>
                 </div>
                 <div className="card-content">
                     <span className="source">{publication.source.name}</span>
