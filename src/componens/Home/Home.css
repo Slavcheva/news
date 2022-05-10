@@ -53,7 +53,7 @@ h3 {
 
     .home-page .publications .publications-list  {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, minmax(0, 1fr));
         grid-gap: 2em;
     }
     .home-page .publications .publications-list .card {

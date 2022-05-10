@@ -21,14 +21,14 @@ const Nav = () => {
         <nav className="site-nav">
             <Link to="/" className="logo"><img src="/logo.png" alt="logo"/><h1>World News</h1></Link>
             <div className="site-menu">
-                <button onClick={handleToggle} name className="button">
+                <button onClick={handleToggle} className="button">
                     {navbarOpen ? (
                         <MdClose className="menu-button"/>
                     ) : (
                         <FiMenu className="menu-button"/>
                     )}
                 </button>
-                <ul className={`menu-nav ${navbarOpen ? " show-menu" : ""}`}>
+                <ul className={`menu-nav ${navbarOpen ? "show-menu" : ""}`}>
                     <NavLink to="/business" className="menu-link" onClick={() => closeMenu()}
                              exact>Business</NavLink>
                     <NavLink to="/science" className="menu-link" onClick={() => closeMenu()}
